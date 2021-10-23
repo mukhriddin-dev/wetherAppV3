@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./img/back.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+.container .card-l {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100vh;
+  flex-direction: column;
+  
+  background:rgba(192, 192, 192, 0.199);
+}
+
+.container .card-l #sbox {
+  width: 280px;
+  height: 45px;
+  border: none;
+  outline: none;
+  padding: 4px 12px;
+  font-size: 19px;
+  border-bottom: 4px solid rgb(255, 115, 0);
+  transition: 0.2s ease;
+  border-radius: 5px;
+  background: rgba(204, 204, 204, 0.438);
+  color: white;
+}
+
+.container .card-l #sbox:focus {
+  border-bottom: 7px solid crimson;
+}
+
+::placeholder {
+  color: white;
+  text-transform: uppercase;
+}
+
+/* card r start */
+
+.container .card-r {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100vh;
+  flex-direction: column;
+  background: rgba(17, 17, 17, 0.418);
+}
+
+.container .card-r .c_name {
+  font-size: 30px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.container .card-r .date {
+  font-size: 22px;
+  position: relative;
+  left: -5rem;
+}
+
+.container  .card-r  .temp{
+    font-size: 150px;
+    font-family: sans-serif;
+    text-shadow: 1px -3px 1px rgb(0, 0, 0);
+}
+
+.container  .card-r  .temp span{
+    font-size: 80px;
+    font-family: sans-serif;
+}
+
+.container  .card-r  .temp img{
+    width: 85px;
+    height: 85px;
+}
+
+.container  .card-r .wt{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 8px;
+}
+
+.container  .card-r .wt-type{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 8px;
+    margin: 12px;
+}
+
+
+@media only screen and (max-width:576px){
+    .container {
+        width: 100%;
+        height: 100vh;
+        background-image: url(./img/back.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .container .card-l {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 30vh;
+        flex-direction: column;
+        order: 5;
+        background:rgba(192, 192, 192, 0.199);
+      }
+      
+      .container .card-l #sbox {
+        width: 280px;
+        height: 45px;
+        border: none;
+        outline: none;
+        padding: 4px 12px;
+        font-size: 19px;
+        border-bottom: 4px solid rgb(255, 115, 0);
+        transition: 0.2s ease;
+        border-radius: 5px;
+        background: rgba(204, 204, 204, 0.438);
+        color: white;
+        position: relative;
+        top:-4rem;
+      }
+      
+      
+      .container .card-l #sbox:focus {
+        border-bottom: 7px solid crimson;
+      }
+      
+      ::placeholder {
+        color: white;
+        text-transform: uppercase;
+      }
+      
+      /* card r start */
+      
+      .container .card-r {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 70vh;
+        flex-direction: column;
+        background: rgba(17, 17, 17, 0.418);
+      }
+      
+      .container .card-r .c_name {
+        font-size: 30px;
+        font-family: "Ubuntu", sans-serif;
+      }
+      
+      .container .card-r .date {
+        font-size: 22px;
+        position: relative;
+        left: -5rem;
+      }
+      
+      .container  .card-r  .temp{
+          font-size: 150px;
+          font-family: sans-serif;
+          text-shadow: 1px -3px 1px rgb(0, 0, 0);
+      }
+      
+      .container  .card-r  .temp span{
+          font-size: 80px;
+          font-family: sans-serif;
+      }
+      
+      .container  .card-r  .temp img{
+          width: 85px;
+          height: 85px;
+      }
+      
+      .container  .card-r .wt{
+          text-transform: uppercase;
+          font-size: 20px;
+          font-weight: 600;
+          letter-spacing: 8px;
+      }
+      
+      .container  .card-r .wt-type{
+          text-transform: uppercase;
+          font-size: 20px;
+          font-weight: 400;
+          letter-spacing: 8px;
+          margin: 12px;
+      }
+      
+}
+
